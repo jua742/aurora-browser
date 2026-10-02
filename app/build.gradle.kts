@@ -7,7 +7,9 @@ plugins {
 
 // Google OSS-licenses plugin (applied via buildscript classpath in the root
 // build file, per Google's documented setup — no plugin-portal marker exists).
-apply(plugin = "com.google.android.gms.oss-licenses")
+// NOTE: the real plugin ID (verified inside the published JAR) is
+// "com.google.android.gms.oss-licenses-plugin" — NOT "...oss-licenses".
+apply(plugin = "com.google.android.gms.oss-licenses-plugin")
 
 android {
     // PLACEHOLDER — replace with your own before any public release (spec A-5).
