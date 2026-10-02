@@ -1,6 +1,7 @@
 package com.aurora.browser.ui.screens
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
@@ -382,6 +383,7 @@ private fun FolderChipsRow(
 }
 
 @Composable
+@OptIn(ExperimentalFoundationApi::class) // combinedClickable is still experimental in foundation 1.7.x
 private fun FolderChip(
     name: String,
     selected: Boolean,
@@ -408,6 +410,7 @@ private fun FolderChip(
 }
 
 @Composable
+@OptIn(ExperimentalFoundationApi::class) // combinedClickable is still experimental in foundation 1.7.x
 private fun BookmarkRow(
     item: BookmarkWithFolder,
     selected: Boolean,

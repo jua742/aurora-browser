@@ -281,7 +281,8 @@ private fun DownloadRow(
                 if (isRunning) {
                     if (record.totalBytes > 0) {
                         LinearProgressIndicator(
-                            progress = progressFraction(record),
+                            // Lambda overload (material3 1.3.x): the Float overload is deprecated.
+                            progress = { progressFraction(record) },
                             modifier = Modifier.fillMaxWidth()
                         )
                     } else {
