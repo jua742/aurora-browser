@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<!--
+  Aurora Browser local error page (spec B-17).
+  Placeholders are replaced by AuroraWebViewClient before loading:
+    {title}     - short heading (from strings.xml, never a raw exception)
+    {message}   - plain-language explanation
+    {url}       - the failing URL (HTML-escaped by the app)
+    {showRetry} - "true"/"false": the SSL page hides [Try again] on purpose
+  Variants are selected with ?type=offline|dns|http|ssl|crash|load.
+  [Try again] links to browser-error://retry (intercepted -> reloads the failing page).
+  [Go home]  links to browser-error://home  (intercepted -> opens the home tab).
+  NOTE: there is deliberately NO addJavascriptInterface in this app (spec B-13);
+  the buttons work purely through scheme interception.
+-->
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #f2f4f8;
+    color: #1a1c1e;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #141518; color: #e3e3e6; }
+    .card { background: #1e2025 !important; }
+    .url { background: #2a2d33 !important; color: #c9ccd2 !important; }
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+  }
+  .icon { font-size: 48px; line-height: 1; margin-bottom: 12px; }
+  h1 { font-size: 20px; margin: 0 0 8px; font-weight: 600; }
+  .message { font-size: 14px; line-height: 1.5; margin: 0 0 12px; opacity: .85; }
+  .url {
+    font-size: 12px;
+    word-break: break-all;
+    background: #eef0f4;
+    color: #44474e;
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin: 0 0 20px;
+  }
+  .actions { display: flex; gap: 12px; justify-content: center; }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 28px;
+    min-height: 48px;
+    line-height: 24px;
+  }
+  .btn.filled { background: #1b6ef3; color: #ffffff; }
+  .btn.outlined { border: 1px solid #1b6ef3; color: #1b6ef3; }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="icon" id="icon">&#x1f310;</div>
+  <h1>{title}</h1>
+  <p class="message">{message}</p>
+  <p class="url">{url}</p>
+  <div class="actions">
+    <a id="retry" class="btn filled" href="browser-error://retry">Try again</a>
+    <a class="btn outlined" href="browser-error://home">Go home</a>
+  </div>
+</main>
+<script>
+(function () {
+  // Hide [Try again] when the app passes showRetry=false (SSL page: no retry, go home instead).
+  if ("{showRetry}" !== "true") {
+    document.getElementById("retry").style.display = "none";
+  }
+  // Pick an icon from the ?type= query variant.
+  var type = "";
+  try { type = new URLSearchParams(window.location.search).get("type") || ""; } catch (e) {}
+  var icons = {
+    offline: "\uD83D\uDCF6",  // antenna
+    dns:     "\uD83D\uDD0D",  // magnifier
+    http:    "\u26A0\uFE0F",  // warning
+    ssl:     "\uD83D\uDD12",  // lock
+    crash:   "\uD83D\uDCA5",  // crash
+    load:    "\uD83C\uDF10"   // globe
+  };
+  document.getElementById("icon").textContent = icons[type] || icons.load;
+})();
+</script>
+</body>
+</html>
