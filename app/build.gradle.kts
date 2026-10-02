@@ -8,13 +8,14 @@ plugins {
 android {
     // PLACEHOLDER — replace with your own before any public release (spec A-5).
     namespace = "com.aurora.browser"
-    compileSdk = 35
+    // compileSdk 34: AGP 8.5.2 supports up to API 34 (8.6.0+ is required for 35).
+    compileSdk = 34
 
     defaultConfig {
         // PLACEHOLDER — replace with your own before any public release (spec A-5).
         applicationId = "com.aurora.browser"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
     }
