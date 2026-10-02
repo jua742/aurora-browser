@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  User-visible text owned by the data-layer/content-screens worker (Worker B).
+  Kept in a separate values file so parallel workers never conflict on strings.xml.
+  Android merges all res/values/*.xml files at build time.
+-->
+<resources>
+
+    <!-- Common -->
+    <string name="content_navigate_back">Navigate back</string>
+    <string name="content_common_cancel">Cancel</string>
+    <string name="content_common_save">Save</string>
+    <string name="content_common_delete">Delete</string>
+    <string name="content_common_undo">Undo</string>
+    <string name="content_common_close">Close</string>
+    <string name="content_common_clear">Clear</string>
+
+    <!-- Bookmarks -->
+    <string name="content_bookmarks_title">Bookmarks</string>
+    <string name="content_bookmarks_search_hint">Search bookmarks</string>
+    <string name="content_bookmarks_all">All</string>
+    <string name="content_bookmarks_no_folder">No folder</string>
+    <string name="content_bookmarks_empty">No bookmarks yet</string>
+    <string name="content_bookmarks_add">Add bookmark</string>
+    <string name="content_bookmarks_edit">Edit bookmark</string>
+    <string name="content_bookmarks_title_hint">Title</string>
+    <string name="content_bookmarks_url_hint">URL</string>
+    <string name="content_bookmarks_url_error">Enter a URL, for example https://example.com</string>
+    <string name="content_bookmarks_folder">Folder</string>
+    <string name="content_bookmarks_new_folder">New folder</string>
+    <string name="content_bookmarks_folder_name_hint">Folder name</string>
+    <string name="content_bookmarks_rename_folder">Rename folder</string>
+    <string name="content_bookmarks_move_to">Move to folder</string>
+    <string name="content_bookmarks_deleted">%1$d deleted</string>
+    <string name="content_bookmarks_menu_edit">Edit</string>
+    <string name="content_bookmarks_menu_move">Move to folder</string>
+    <string name="content_bookmarks_menu_delete">Delete</string>
+    <string name="content_bookmarks_delete_selected_title">Delete %1$d items?</string>
+    <string name="content_bookmarks_delete_selected_message">You can undo this right after deleting.</string>
+    <string name="content_bookmarks_folder_not_empty">This folder is not empty</string>
+    <string name="content_bookmarks_folder_is_default">The default folders can\'t be deleted</string>
+    <string name="content_bookmarks_selected_count">%1$d selected</string>
+    <string name="content_bookmarks_clear_selection">Clear selection</string>
+    <string name="content_bookmarks_move">Move</string>
+    <string name="content_bookmarks_more_options">More options</string>
+
+    <!-- History -->
+    <string name="content_history_title">History</string>
+    <string name="content_history_search_hint">Search history</string>
+    <string name="content_history_empty">No history yet</string>
+    <string name="content_history_clear_all">Clear all history</string>
+    <string name="content_history_clear_confirm_title">Clear all history?</string>
+    <string name="content_history_clear_confirm_message">This permanently deletes your entire browsing history.</string>
+    <string name="content_history_deleted">Entry deleted</string>
+    <string name="content_history_today">Today</string>
+    <string name="content_history_yesterday">Yesterday</string>
+
+    <!-- Settings -->
+    <string name="content_settings_title">Settings</string>
+    <string name="content_settings_general">General</string>
+    <string name="content_settings_search_engine">Search engine</string>
+    <string name="content_settings_homepage">Homepage</string>
+    <string name="content_settings_homepage_mode_home">Home page</string>
+    <string name="content_settings_homepage_mode_blank">Blank page</string>
+    <string name="content_settings_homepage_mode_last_tabs">Last open tabs</string>
+    <string name="content_settings_homepage_url_hint">Homepage URL</string>
+    <string name="content_settings_homepage_url_error">Enter a valid URL with no spaces</string>
+    <string name="content_settings_default_browser">Default browser</string>
+    <string name="content_settings_default_browser_note">Open system settings to make Aurora your default browser</string>
+    <string name="content_settings_appearance">Appearance</string>
+    <string name="content_settings_theme_display">Theme and display</string>
+    <string name="content_settings_theme_display_summary">%1$s · Text %2$d%%</string>
+    <string name="content_settings_privacy">Privacy</string>
+    <string name="content_settings_privacy_clearing">Privacy and data clearing</string>
+    <string name="content_settings_site_permissions">Site permissions</string>
+    <string name="content_settings_downloads">Downloads</string>
+    <string name="content_settings_about">About Aurora Browser</string>
+
+    <!-- Search settings -->
+    <string name="content_search_settings_title">Search engine</string>
+    <string name="content_search_engine_google">Google</string>
+    <string name="content_search_engine_bing">Bing</string>
+    <string name="content_search_engine_duckduckgo">DuckDuckGo</string>
+    <string name="content_search_engine_yahoo">Yahoo</string>
+    <string name="content_search_engine_custom">Custom</string>
+    <string name="content_search_template_hint">Search URL template</string>
+    <string name="content_search_template_example">Example: https://example.com/search?q=%s</string>
+    <string name="content_search_template_error">Must start with https:// and contain %s</string>
+    <string name="content_search_suggestions_note">Suggestions come from your history and bookmarks on this device.</string>
+
+    <!-- Appearance settings -->
+    <string name="content_appearance_title">Appearance</string>
+    <string name="content_appearance_theme">Theme</string>
+    <string name="content_appearance_theme_system">System default</string>
+    <string name="content_appearance_theme_light">Light</string>
+    <string name="content_appearance_theme_dark">Dark</string>
+    <string name="content_appearance_text_size">Text size</string>
+    <string name="content_appearance_web_darkening">Darken websites</string>
+    <string name="content_appearance_web_darkening_note">Applies algorithmic darkening to web pages when the dark theme is on</string>
+
+    <!-- Privacy settings -->
+    <string name="content_privacy_title">Privacy</string>
+    <string name="content_privacy_clear_data">Clear browsing data</string>
+    <string name="content_privacy_clear_history">History</string>
+    <string name="content_privacy_clear_cookies">Cookies and site data</string>
+    <string name="content_privacy_clear_cache">Cache</string>
+    <string name="content_privacy_clear_downloads">Downloads list</string>
+    <string name="content_privacy_clear_downloads_note">Only the list — your files are never deleted</string>
+    <string name="content_privacy_clear_permissions">Saved site permissions</string>
+    <string name="content_privacy_clearing">Clearing browsing data…</string>
+    <string name="content_privacy_clear_on_exit">Clear on exit</string>
+    <string name="content_privacy_clear_on_exit_note">Wipe the selected data every time the app closes</string>
+    <string name="content_privacy_web_content">Web content</string>
+    <string name="content_privacy_javascript">JavaScript</string>
+    <string name="content_privacy_javascript_warning">Many websites will not work correctly with JavaScript disabled.</string>
+    <string name="content_privacy_block_third_party">Block third-party cookies</string>
+    <string name="content_privacy_desktop_mode">Desktop site by default</string>
+    <string name="content_privacy_incognito_title">About incognito</string>
+    <string name="content_privacy_incognito_body">Incognito keeps this device from remembering your session. It does not hide you from your network, employer, or the websites you visit.</string>
+    <string name="content_privacy_incognito_downloads">Files you download are still saved.</string>
+
+    <!-- Site permissions -->
+    <string name="content_site_permissions_title">Site permissions</string>
+    <string name="content_site_permissions_empty">No site permissions saved</string>
+    <string name="content_site_permissions_clear_all">Clear all</string>
+    <string name="content_site_permissions_clear_confirm">Remove all saved site permissions?</string>
+    <string name="content_site_permissions_allow">Allow</string>
+    <string name="content_site_permissions_block">Block</string>
+    <string name="content_site_permissions_delete_origin">Remove permissions for this site</string>
+    <string name="content_site_permissions_camera">Camera</string>
+    <string name="content_site_permissions_microphone">Microphone</string>
+    <string name="content_site_permissions_location">Location</string>
+    <string name="content_site_permissions_unknown">Unknown</string>
+
+    <!-- Download settings -->
+    <string name="content_download_settings_title">Downloads</string>
+    <string name="content_download_location">Download location</string>
+    <string name="content_download_location_value">Files are saved to the system Downloads folder.</string>
+    <string name="content_download_notifications">Download notifications</string>
+    <string name="content_download_notifications_note">Open system settings to allow or mute download notifications</string>
+
+    <!-- About -->
+    <string name="content_about_title">About</string>
+    <string name="content_about_app_name">Aurora Browser</string>
+    <string name="content_about_version">Version %1$s (%2$d)</string>
+    <string name="content_about_webview">Built with Android System WebView</string>
+    <string name="content_about_webview_version">System WebView version: %1$s</string>
+    <string name="content_about_webview_unknown">System WebView version: unknown</string>
+    <string name="content_about_licenses">Open-source licenses</string>
+    <string name="content_about_privacy">All data stays on your device. Aurora Browser has no accounts, no servers, and no analytics.</string>
+
+</resources>

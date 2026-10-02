@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand seed for Material 3 dynamic-color fallback (spec B-2: #1B6EF3) -->
+    <color name="seed">#1B6EF3</color>
+    <color name="ic_launcher_background">#1B6EF3</color>
+</resources>

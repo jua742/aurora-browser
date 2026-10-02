@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- All user-visible text owned by Worker C (downloads, permissions).
+     Keys are prefixed downloads_ / perm_ to avoid collisions with other workers. -->
+<resources>
+    <!-- Downloads screen -->
+    <string name="downloads_title">Downloads</string>
+    <string name="downloads_back_desc">Back</string>
+    <string name="downloads_saved_to">Saved to Downloads folder</string>
+    <string name="downloads_empty">No downloads yet</string>
+    <string name="downloads_empty_hint">Files you download from the web will appear here.</string>
+    <string name="downloads_status_running">%1$s of %2$s · %3$d%%</string>
+    <string name="downloads_status_running_unknown_total">%1$s downloaded</string>
+    <string name="downloads_status_queued">Waiting to start</string>
+    <string name="downloads_status_complete">Complete · %1$s</string>
+    <string name="downloads_status_failed">Failed — %1$s</string>
+    <string name="downloads_open">Open</string>
+    <string name="downloads_retry">Retry</string>
+    <string name="downloads_delete">Delete</string>
+    <string name="downloads_details">Details</string>
+    <string name="downloads_close">Close</string>
+    <string name="downloads_overflow_desc">More options for %1$s</string>
+    <string name="downloads_file_icon_desc">File icon</string>
+    <string name="downloads_delete_title">Delete download?</string>
+    <string name="downloads_delete_message">This permanently deletes the file from your device. This cannot be undone.</string>
+    <string name="downloads_delete_confirm">Delete</string>
+    <string name="downloads_cancel">Cancel</string>
+    <string name="downloads_deleted">%1$s deleted</string>
+    <string name="downloads_details_title">Download details</string>
+    <string name="downloads_details_file">File name</string>
+    <string name="downloads_details_url">URL</string>
+    <string name="downloads_details_mime">Type</string>
+    <string name="downloads_details_status">Status</string>
+    <string name="downloads_details_downloaded">Downloaded</string>
+    <string name="downloads_details_started">Started</string>
+    <string name="downloads_details_completed">Completed</string>
+    <string name="downloads_details_bytes">%1$s of %2$s</string>
+    <string name="downloads_not_available">—</string>
+    <string name="downloads_no_app_for_type">No app can open this file type</string>
+    <string name="downloads_file_missing">The downloaded file is no longer available</string>
+    <string name="downloads_unsupported">This download type isn\'t supported yet</string>
+    <string name="downloads_start_failed">Couldn\'t start the download</string>
+    <string name="downloads_error_no_space">No space left</string>
+    <string name="downloads_error_network">Network error</string>
+    <string name="downloads_error_storage">Storage error</string>
+    <string name="downloads_error_server">Server error</string>
+    <string name="downloads_error_blocked">Blocked</string>
+    <string name="downloads_error_unknown">Download failed</string>
+    <string name="downloads_notifications_banner">Allow notifications to get alerted when your downloads finish. Downloads work either way.</string>
+    <string name="downloads_notifications_allow">Allow</string>
+    <string name="downloads_notifications_dismiss">Not now</string>
+
+    <!-- Runtime permission rationales (PermissionManager) -->
+    <string name="perm_rationale_title">Permission needed</string>
+    <string name="perm_rationale_continue">Continue</string>
+    <string name="perm_rationale_not_now">Not now</string>
+    <string name="perm_rationale_camera">Aurora Browser needs camera access so websites you visit can use your camera — for example, for video calls. You can change this anytime in the app settings.</string>
+    <string name="perm_rationale_microphone">Aurora Browser needs microphone access so websites you visit can use your microphone — for example, for voice calls. You can change this anytime in the app settings.</string>
+    <string name="perm_rationale_location">Aurora Browser needs location access so websites you visit can show nearby content. You can change this anytime in the app settings.</string>
+    <string name="perm_rationale_notifications">Allow notifications so Aurora Browser can tell you when your downloads finish. Downloads still work if you decline — progress stays visible in the Downloads screen.</string>
+    <string name="perm_rationale_generic">Aurora Browser needs this permission for the feature you requested. You can change this anytime in the app settings.</string>
+</resources>

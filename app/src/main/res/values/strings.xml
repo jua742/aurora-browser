@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ALL user-visible text for Worker A's screens lives here (spec: strings.xml = all UI text).
+  Screens owned by other workers keep their own strings in this same file when added.
+-->
+<resources>
+    <string name="app_name">Aurora Browser</string>
+
+    <!-- Home / new-tab page -->
+    <string name="search_hint">Search or enter address</string>
+    <string name="top_sites">Top sites</string>
+    <string name="top_sites_empty">Your top sites will appear here</string>
+    <string name="home_bookmarks">Bookmarks</string>
+    <string name="home_bookmarks_empty">No bookmarks yet</string>
+
+    <!-- Browser toolbar -->
+    <string name="cd_back">Back</string>
+    <string name="cd_forward">Forward</string>
+    <string name="cd_reload">Reload</string>
+    <string name="cd_stop">Stop loading</string>
+    <string name="cd_tabs">Tabs</string>
+    <string name="cd_menu">Menu</string>
+    <string name="cd_secure">Secure connection</string>
+    <string name="cd_not_secure">Not secure</string>
+    <string name="cd_bookmark_add">Add bookmark</string>
+    <string name="cd_bookmark_remove">Remove bookmark</string>
+
+    <!-- Overflow menu -->
+    <string name="menu_new_tab">New tab</string>
+    <string name="menu_new_incognito_tab">New incognito tab</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_add_bookmark">Add bookmark</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_find_in_page">Find in page</string>
+    <string name="menu_desktop_site">Desktop site</string>
+    <string name="menu_bookmarks">Bookmarks</string>
+    <string name="menu_history">History</string>
+    <string name="menu_downloads">Downloads</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Tabs switcher -->
+    <string name="tabs_title">Tabs</string>
+    <string name="tab_normal">Normal</string>
+    <string name="tab_incognito">Incognito</string>
+    <string name="no_open_tabs">No open tabs</string>
+    <string name="close_all_tabs">Close all</string>
+    <string name="close_tab">Close tab</string>
+    <string name="incognito_label">Incognito</string>
+    <string name="tab_card_description">Tab: %1$s</string>
+    <string name="cd_add_tab">New tab</string>
+
+    <!-- Find in page -->
+    <string name="find_hint">Find in page</string>
+    <string name="find_counter">%1$d of %2$d</string>
+    <string name="cd_find_up">Previous match</string>
+    <string name="cd_find_down">Next match</string>
+    <string name="cd_find_close">Close find</string>
+
+    <!-- Offline banner -->
+    <string name="offline_banner">You\'re offline</string>
+
+    <!-- One-shot toasts -->
+    <string name="toast_oldest_tab_closed">Oldest tab closed to save memory</string>
+    <string name="toast_invalid_url">Please enter a valid address or search term</string>
+    <string name="toast_link_blocked">This kind of link is blocked</string>
+    <string name="toast_no_app_for_link">No app can open this link</string>
+    <string name="toast_download_unsupported">This download type isn\'t supported yet</string>
+
+    <!-- Geolocation permission dialog -->
+    <string name="geo_title">Allow %1$s to access your location?</string>
+    <string name="geo_allow_once">Allow once</string>
+    <string name="geo_allow_always">Always allow</string>
+    <string name="geo_block">Block</string>
+
+    <!-- Error pages (titles/messages only — never raw exceptions, spec B-17) -->
+    <string name="error_offline_title">You\'re offline</string>
+    <string name="error_offline_message">Check your internet connection and try again.</string>
+    <string name="error_dns_title">This site can\'t be reached</string>
+    <string name="error_dns_message">The address may be mistyped, or the site may be temporarily down.</string>
+    <string name="error_load_title">Couldn\'t load this page</string>
+    <string name="error_load_message">The page failed to load. Try again in a moment.</string>
+    <string name="error_http_title">Couldn\'t load this page</string>
+    <string name="error_http_message">The server returned an error (HTTP %1$d).</string>
+    <string name="error_ssl_title">Connection not private</string>
+    <string name="error_ssl_message">Aurora blocked this page because its security certificate can\'t be trusted. Someone could be trying to intercept your connection.</string>
+    <string name="error_crash_title">This page crashed</string>
+    <string name="error_crash_message">Something went wrong while showing this page. Reloading usually fixes it.</string>
+    <string name="error_try_again">Try again</string>
+    <string name="error_go_home">Go home</string>
+</resources>
