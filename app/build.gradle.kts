@@ -21,16 +21,18 @@ android {
     }
 
     // Release signing reads local.properties (NEVER committed). See README "Release signing".
+    // In CI (no local.properties) we skip signing config entirely — an incomplete
+    // signing config assigned to the release build type fails AGP configuration.
     val localProperties = java.util.Properties()
     val localPropertiesFile = rootProject.file("local.properties")
     if (localPropertiesFile.exists()) {
         localPropertiesFile.inputStream().use { localProperties.load(it) }
     }
-    signingConfigs {
-        create("release") {
-            val storeFilePath = localProperties.getProperty("storeFile")
-            if (!storeFilePath.isNullOrBlank()) {
-                storeFile = file(storeFilePath)
+    val hasReleaseKeystore = !localProperties.getProperty("storeFile").isNullOrBlank()
+    if (hasReleaseKeystore) {
+        signingConfigs {
+            create("release") {
+                storeFile = file(localProperties.getProperty("storeFile")!!)
                 storePassword = localProperties.getProperty("storePassword")
                 keyAlias = localProperties.getProperty("keyAlias")
                 keyPassword = localProperties.getProperty("keyPassword")
@@ -43,7 +45,9 @@ android {
             // Debuggable, auto-signed with the debug key. Installs straight onto a phone.
         }
         getByName("release") {
-            signingConfig = signingConfigs.getByName("release")
+            if (hasReleaseKeystore) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
