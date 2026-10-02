@@ -3,8 +3,11 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.ksp)
-    alias(libs.plugins.oss.licenses)
 }
+
+// Google OSS-licenses plugin (applied via buildscript classpath in the root
+// build file, per Google's documented setup — no plugin-portal marker exists).
+apply(plugin = "com.google.android.gms.oss-licenses")
 
 android {
     // PLACEHOLDER — replace with your own before any public release (spec A-5).

@@ -9,12 +9,14 @@ coreKtx = "1.13.1"
 activityCompose = "1.9.3"
 lifecycle = "2.8.7"
 navigationCompose = "2.7.7"
-webkit = "1.10.1"
+webkit = "1.12.1"
 room = "2.6.1"
 datastore = "1.1.1"
 composeBom = "2024.10.01"
 coil = "2.6.0"
-ossLicensesPlugin = "17.1.0"
+# NOTE: the oss-licenses Gradle PLUGIN is applied via the legacy buildscript
+# classpath in the root build.gradle.kts (version 0.13.0) because Google does
+# not publish a plugin-marker for it. Only the LIBRARY version lives here.
 ossLicensesLibrary = "17.1.0"
 
 [libraries]
@@ -41,4 +43,3 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
-oss-licenses = { id = "com.google.android.gms.oss-licenses", version.ref = "ossLicensesPlugin" }
