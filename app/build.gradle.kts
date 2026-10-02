@@ -5,12 +5,6 @@ plugins {
     alias(libs.plugins.kotlin.ksp)
 }
 
-// Google OSS-licenses plugin (applied via buildscript classpath in the root
-// build file, per Google's documented setup — no plugin-portal marker exists).
-// NOTE: the real plugin ID (verified inside the published JAR) is
-// "com.google.android.gms.oss-licenses-plugin" — NOT "...oss-licenses".
-apply(plugin = "com.google.android.gms.oss-licenses-plugin")
-
 android {
     // PLACEHOLDER — replace with your own before any public release (spec A-5).
     namespace = "com.aurora.browser"
@@ -95,9 +89,6 @@ dependencies {
 
     // Coil — favicons only
     implementation(libs.coil.compose)
-
-    // Open-source licenses screen
-    implementation(libs.oss.licenses.library)
 
     // Compose BOM: material3, ui, icons versions all managed here
     val composeBom = platform(libs.androidx.compose.bom)

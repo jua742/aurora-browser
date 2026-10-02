@@ -1,9 +1,10 @@
 package com.aurora.browser.ui.screens
 
-import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -12,7 +13,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -28,14 +28,10 @@ import androidx.compose.ui.unit.dp
 import androidx.webkit.WebViewCompat
 import coil.compose.AsyncImage
 import com.aurora.browser.R
-import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 
 /**
  * About: app icon and version (from the installed package), the System WebView
  * version (the actual rendering engine), open-source licenses, and the privacy note.
- *
- * Build requirement (Worker A): the play-services-oss-licenses dependency for
- * OssLicensesMenuActivity (already in the version catalog).
  */
 @Composable
 fun AboutScreen(onNavigateBack: () -> Unit) {
@@ -127,10 +123,33 @@ fun AboutScreen(onNavigateBack: () -> Unit) {
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
             Spacer(Modifier.height(24.dp))
-            Button(onClick = {
-                context.startActivity(Intent(context, OssLicensesMenuActivity::class.java))
-            }) {
-                Text(stringResource(R.string.content_about_licenses))
+            // Open-source notices (static v1 list — every dependency below is
+            // Apache License 2.0; the WebView is a system component).
+            Card(
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surfaceVariant
+                ),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Column(
+                    modifier = Modifier.padding(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.content_about_licenses),
+                        style = MaterialTheme.typography.titleSmall
+                    )
+                    LicenseRow("Kotlin", "Apache License 2.0")
+                    LicenseRow("Jetpack Compose (Material 3)", "Apache License 2.0")
+                    LicenseRow("AndroidX Room", "Apache License 2.0")
+                    LicenseRow("AndroidX DataStore", "Apache License 2.0")
+                    LicenseRow("AndroidX WebKit", "Apache License 2.0")
+                    LicenseRow("Coil", "Apache License 2.0")
+                    LicenseRow(
+                        "Android System WebView",
+                        "System component (Chromium)"
+                    )
+                }
             }
             Spacer(Modifier.height(24.dp))
             Card(
@@ -146,5 +165,25 @@ fun AboutScreen(onNavigateBack: () -> Unit) {
                 )
             }
         }
+    }
+}
+
+/** One row in the static open-source notices list. */
+@Composable
+private fun LicenseRow(name: String, license: String) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        Text(
+            text = name,
+            style = MaterialTheme.typography.bodyMedium,
+            modifier = Modifier.weight(1f)
+        )
+        Text(
+            text = license,
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
     }
 }
