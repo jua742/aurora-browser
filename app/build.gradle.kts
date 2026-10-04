@@ -1,7 +1,16 @@
-plugins {
-    id("com.android.application") version "8.7.3"
-    id("org.jetbrains.kotlin.android") version "2.0.21"
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.5.2")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21")
+    }
 }
+
+apply(plugin = "com.android.application")
+apply(plugin = "kotlin-android")
 
 android {
     namespace = "com.aurora.browser"
