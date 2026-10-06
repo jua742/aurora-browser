@@ -1,1 +1,110 @@
-cGx1Z2lucyB7CiAgICBhbGlhcyhsaWJzLnBsdWdpbnMuYW5kcm9pZC5hcHBsaWNhdGlvbikKICAgIGFsaWFzKGxpYnMucGx1Z2lucy5rb3RsaW4uYW5kcm9pZCkKICAgIGFsaWFzKGxpYnMucGx1Z2lucy5rb3RsaW4uY29tcG9zZSkKICAgIGFsaWFzKGxpYnMucGx1Z2lucy5rb3RsaW4ua3NwKQp9CgphbmRyb2lkIHsKICAgIC8vIFBMQUNFSE9MREVSIOKAlCByZXBsYWNlIHdpdGggeW91ciBvd24gYmVmb3JlIGFueSBwdWJsaWMgcmVsZWFzZSAoc3BlYyBBLTUpLgogICAgbmFtZXNwYWNlID0gImNvbS5hdXJvcmEuYnJvd3NlciIKICAgIC8vIGNvbXBpbGVTZGsgMzQ6IEFHUCA4LjUuMiBzdXBwb3J0cyB1cCB0byBBUEkgMzQgKDguNi4wKyBpcyByZXF1aXJlZCBmb3IgMzUpLgogICAgY29tcGlsZVNkayA9IDM0CgogICAgZGVmYXVsdENvbmZpZyB7CiAgICAgICAgLy8gUExBQ0VIT0xERVIg4oCUIHJlcGxhY2Ugd2l0aCB5b3VyIG93biBiZWZvcmUgYW55IHB1YmxpYyByZWxlYXNlIChzcGVjIEEtNSkuCiAgICAgICAgYXBwbGljYXRpb25JZCA9ICJjb20uYXVyb3JhLmJyb3dzZXIiCiAgICAgICAgbWluU2RrID0gMjQKICAgICAgICB0YXJnZXRTZGsgPSAzNAogICAgICAgIHZlcnNpb25Db2RlID0gMQogICAgICAgIHZlcnNpb25OYW1lID0gIjEuMC4wIgogICAgfQoKICAgIC8vIFJlbGVhc2Ugc2lnbmluZyByZWFkcyBsb2NhbC5wcm9wZXJ0aWVzIChORVZFUiBjb21taXR0ZWQpLiBTZWUgUkVBRE1FICJSZWxlYXNlIHNpZ25pbmciLgogICAgLy8gSW4gQ0kgKG5vIGxvY2FsLnByb3BlcnRpZXMpIHdlIHNraXAgc2lnbmluZyBjb25maWcgZW50aXJlbHkg4oCUIGFuIGluY29tcGxldGUKICAgIC8vIHNpZ25pbmcgY29uZmlnIGFzc2lnbmVkIHRvIHRoZSByZWxlYXNlIGJ1aWxkIHR5cGUgZmFpbHMgQUdQIGNvbmZpZ3VyYXRpb24uCiAgICB2YWwgbG9jYWxQcm9wZXJ0aWVzID0gamF2YS51dGlsLlByb3BlcnRpZXMoKQogICAgdmFsIGxvY2FsUHJvcGVydGllc0ZpbGUgPSByb290UHJvamVjdC5maWxlKCJsb2NhbC5wcm9wZXJ0aWVzIikKICAgIGlmIChsb2NhbFByb3BlcnRpZXNGaWxlLmV4aXN0cygpKSB7CiAgICAgICAgbG9jYWxQcm9wZXJ0aWVzRmlsZS5pbnB1dFN0cmVhbSgpLnVzZSB7IGxvY2FsUHJvcGVydGllcy5sb2FkKGl0KSB9CiAgICB9CiAgICB2YWwgaGFzUmVsZWFzZUtleXN0b3JlID0gIWxvY2FsUHJvcGVydGllcy5nZXRQcm9wZXJ0eSgic3RvcmVGaWxlIikuaXNOdWxsT3JCbGFuaygpCiAgICBpZiAoaGFzUmVsZWFzZUtleXN0b3JlKSB7CiAgICAgICAgc2lnbmluZ0NvbmZpZ3MgewogICAgICAgICAgICBjcmVhdGUoInJlbGVhc2UiKSB7CiAgICAgICAgICAgICAgICBzdG9yZUZpbGUgPSBmaWxlKGxvY2FsUHJvcGVydGllcy5nZXRQcm9wZXJ0eSgic3RvcmVGaWxlIikhISkKICAgICAgICAgICAgICAgIHN0b3JlUGFzc3dvcmQgPSBsb2NhbFByb3BlcnRpZXMuZ2V0UHJvcGVydHkoInN0b3JlUGFzc3dvcmQiKQogICAgICAgICAgICAgICAga2V5QWxpYXMgPSBsb2NhbFByb3BlcnRpZXMuZ2V0UHJvcGVydHkoImtleUFsaWFzIikKICAgICAgICAgICAgICAgIGtleVBhc3N3b3JkID0gbG9jYWxQcm9wZXJ0aWVzLmdldFByb3BlcnR5KCJrZXlQYXNzd29yZCIpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgYnVpbGRUeXBlcyB7CiAgICAgICAgZ2V0QnlOYW1lKCJkZWJ1ZyIpIHsKICAgICAgICAgICAgLy8gRGVidWdnYWJsZSwgYXV0by1zaWduZWQgd2l0aCB0aGUgZGVidWcga2V5LiBJbnN0YWxscyBzdHJhaWdodCBvbnRvIGEgcGhvbmUuCiAgICAgICAgfQogICAgICAgIGdldEJ5TmFtZSgicmVsZWFzZSIpIHsKICAgICAgICAgICAgaWYgKGhhc1JlbGVhc2VLZXlzdG9yZSkgewogICAgICAgICAgICAgICAgc2lnbmluZ0NvbmZpZyA9IHNpZ25pbmdDb25maWdzLmdldEJ5TmFtZSgicmVsZWFzZSIpCiAgICAgICAgICAgIH0KICAgICAgICAgICAgaXNNaW5pZnlFbmFibGVkID0gdHJ1ZQogICAgICAgICAgICBpc1Nocmlua1Jlc291cmNlcyA9IHRydWUKICAgICAgICAgICAgcHJvZ3VhcmRGaWxlcygKICAgICAgICAgICAgICAgIGdldERlZmF1bHRQcm9ndWFyZEZpbGUoInByb2d1YXJkLWFuZHJvaWQtb3B0aW1pemUudHh0IiksCiAgICAgICAgICAgICAgICAicHJvZ3VhcmQtcnVsZXMucHJvIiwKICAgICAgICAgICAgKQogICAgICAgIH0KICAgIH0KCiAgICBjb21waWxlT3B0aW9ucyB7CiAgICAgICAgc291cmNlQ29tcGF0aWJpbGl0eSA9IEphdmFWZXJzaW9uLlZFUlNJT05fMTcKICAgICAgICB0YXJnZXRDb21wYXRpYmlsaXR5ID0gSmF2YVZlcnNpb24uVkVSU0lPTl8xNwogICAgfQogICAgYnVpbGRGZWF0dXJlcyB7CiAgICAgICAgY29tcG9zZSA9IHRydWUKICAgIH0KfQoKa290bGluIHsKICAgIGNvbXBpbGVyT3B0aW9ucyB7CiAgICAgICAganZtVGFyZ2V0LnNldChvcmcuamV0YnJhaW5zLmtvdGxpbi5ncmFkbGUuZHNsLkp2bVRhcmdldC5KVk1fMTcpCiAgICB9Cn0KCmRlcGVuZGVuY2llcyB7CiAgICAvLyBBbmRyb2lkWCBjb3JlCiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmNvcmUua3R4KQogICAgaW1wbGVtZW50YXRpb24obGlicy5hbmRyb2lkeC5hY3Rpdml0eS5jb21wb3NlKQoKICAgIC8vIExpZmVjeWNsZSArIFZpZXdNb2RlbCAoU3RhdGVGbG93IFVJIHN0YXRlLCBubyBIaWx0IGluIHYxKQogICAgaW1wbGVtZW50YXRpb24obGlicy5hbmRyb2lkeC5saWZlY3ljbGUudmlld21vZGVsLmNvbXBvc2UpCiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmxpZmVjeWNsZS5ydW50aW1lLmNvbXBvc2UpCgogICAgLy8gTmF2aWdhdGlvbiBDb21wb3NlCiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4Lm5hdmlnYXRpb24uY29tcG9zZSkKCiAgICAvLyBTeXN0ZW0gV2ViVmlldyBjb21wYXQgKGFsZ29yaXRobWljIGRhcmtlbmluZywgc2FmZSBicm93c2luZyBiYWNrcG9ydHMpCiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LndlYmtpdCkKCiAgICAvLyBSb29tIChib29rbWFya3MsIGhpc3RvcnksIGRvd25sb2FkcywgdGFicywgc2l0ZSBwZXJtaXNzaW9ucykKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuYW5kcm9pZHgucm9vbS5ydW50aW1lKQogICAgaW1wbGVtZW50YXRpb24obGlicy5hbmRyb2lkeC5yb29tLmt0eCkKICAgIGtzcChsaWJzLmFuZHJvaWR4LnJvb20uY29tcGlsZXIpCgogICAgLy8gRGF0YVN0b3JlIFByZWZlcmVuY2VzIChhbGwgdXNlciBzZXR0aW5ncykKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuYW5kcm9pZHguZGF0YXN0b3JlLnByZWZlcmVuY2VzKQoKICAgIC8vIENvaWwg4oCUIGZhdmljb25zIG9ubHkKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuY29pbC5jb21wb3NlKQoKICAgIC8vIENvbXBvc2UgQk9NOiBtYXRlcmlhbDMsIHVpLCBpY29ucyB2ZXJzaW9ucyBhbGwgbWFuYWdlZCBoZXJlCiAgICB2YWwgY29tcG9zZUJvbSA9IHBsYXRmb3JtKGxpYnMuYW5kcm9pZHguY29tcG9zZS5ib20pCiAgICBpbXBsZW1lbnRhdGlvbihjb21wb3NlQm9tKQogICAgaW1wbGVtZW50YXRpb24obGlicy5hbmRyb2lkeC51aSkKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuYW5kcm9pZHgudWkuZ3JhcGhpY3MpCiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4Lm1hdGVyaWFsMykKICAgIC8vIEZ1bGwgaWNvbiBzZXQgKGNvcmUgbGFja3Mgc2V2ZXJhbCBpY29ucyB0aGUgYXBwIHVzZXMsIGUuZy4gSW5zZXJ0RHJpdmVGaWxlLAogICAgLy8gUGljdHVyZUFzUGRmLCBNb3ZpZSDigJQgdW5yZXNvbHZlZCByZWZlcmVuY2VzIHdvdWxkIGZhaWwgdGhlIGJ1aWxkKS4KICAgIGltcGxlbWVudGF0aW9uKGxpYnMuYW5kcm9pZHgubWF0ZXJpYWwuaWNvbnMuZXh0ZW5kZWQpCn0K
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.ksp)
+}
+
+android {
+    // PLACEHOLDER — replace with your own before any public release (spec A-5).
+    namespace = "com.aurora.browser"
+    // compileSdk 34: AGP 8.5.2 supports up to API 34 (8.6.0+ is required for 35).
+    compileSdk = 34
+
+    defaultConfig {
+        // PLACEHOLDER — replace with your own before any public release (spec A-5).
+        applicationId = "com.aurora.browser"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0.0"
+    }
+
+    // Release signing reads local.properties (NEVER committed). See README "Release signing".
+    // In CI (no local.properties) we skip signing config entirely — an incomplete
+    // signing config assigned to the release build type fails AGP configuration.
+    val localProperties = java.util.Properties()
+    val localPropertiesFile = rootProject.file("local.properties")
+    if (localPropertiesFile.exists()) {
+        localPropertiesFile.inputStream().use { localProperties.load(it) }
+    }
+    val hasReleaseKeystore = !localProperties.getProperty("storeFile").isNullOrBlank()
+    if (hasReleaseKeystore) {
+        signingConfigs {
+            create("release") {
+                storeFile = file(localProperties.getProperty("storeFile")!!)
+                storePassword = localProperties.getProperty("storePassword")
+                keyAlias = localProperties.getProperty("keyAlias")
+                keyPassword = localProperties.getProperty("keyPassword")
+            }
+        }
+    }
+
+    buildTypes {
+        getByName("debug") {
+            // Debuggable, auto-signed with the debug key. Installs straight onto a phone.
+        }
+        getByName("release") {
+            if (hasReleaseKeystore) {
+                signingConfig = signingConfigs.getByName("release")
+            }
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro",
+            )
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    buildFeatures {
+        compose = true
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+    }
+}
+
+dependencies {
+    // AndroidX core
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.activity.compose)
+
+    // Lifecycle + ViewModel (StateFlow UI state, no Hilt in v1)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
+    // Navigation Compose
+    implementation(libs.androidx.navigation.compose)
+
+    // System WebView compat (algorithmic darkening, safe browsing backports)
+    implementation(libs.androidx.webkit)
+
+    // Room (bookmarks, history, downloads, tabs, site permissions)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
+
+    // DataStore Preferences (all user settings)
+    implementation(libs.androidx.datastore.preferences)
+
+    // Coil — favicons only
+    implementation(libs.coil.compose)
+
+    // Compose BOM: material3, ui, icons versions all managed here
+    val composeBom = platform(libs.androidx.compose.bom)
+    implementation(composeBom)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.material3)
+    // Full icon set (core lacks several icons the app uses, e.g. InsertDriveFile,
+    // PictureAsPdf, Movie — unresolved references would fail the build).
+    implementation(libs.androidx.material.icons.extended)
+}
