@@ -73,7 +73,7 @@ jobs:
             exit 1
           fi
           echo "BUILD SUCCEEDED"
-          - name: Upload debug APK
+         - name: Upload debug APK
            if: steps.build.outputs.exit == '0'
 
 
